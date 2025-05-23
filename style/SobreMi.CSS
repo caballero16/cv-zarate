@@ -1,0 +1,11 @@
+section{
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 10px;
+}
+section h2{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    color: #137471;
+}
