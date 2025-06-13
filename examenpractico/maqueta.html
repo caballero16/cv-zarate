@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /*Estilo general*/
+    .grid-container{
+        border: solid black;
+        padding: 10px;
+        margin: 10px;
+        display: grid;
+        grid-template:
+        "header  header  header" 250px
+        "main  main  main" 250px
+        "footer  footer  footer" 250px
+        ;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       }
+
+       /*Distribucion de areas del grid*/
+       .grid-container header{
+        grid-area: header;
+        background-color: white;
+        border: solid black;
+       }
+
+        .grid-container main{
+        grid-area: main;
+        background-color: white;
+        border: solid black;
+        display: grid;
+        grid-template: 
+        "projets      workExperience    education"
+        "calculator   workExperience    education"
+        "quiz         workExperience    education"
+        "coutdown     openWord          education"
+        "productPage  openWord          education"
+        ;
+       }
+
+        .grid-container footer{
+        grid-area: footer;
+        background-color: white;
+        border: solid black;
+        display: grid;
+        gap: 10px;
+        grid-template: 
+        "titulo  titulo  titulo" auto
+        "testimonio1  testimonio2  testimonio3" 100px
+        "derechos  derechos  derechos" 100px
+        ;
+       }
+
+       /*Distribucion de elementos del main*/
+       .grid-container main .Projets{
+        grid-area: projets;
+        border: solid 1px black;
+        text-align: center;
+       }
+
+        .grid-container main .Calculadora{
+        grid-area: calculator;
+        border: solid 1px black;
+        text-align: center;
+       }
+
+       .grid-container main .Quiz{
+        grid-area: quiz;
+        border: solid 1px black;
+        text-align: center;
+       }
+
+       .grid-container main .CuentaRegresiva{
+        grid-area: coutdown;
+        border: solid 1px black;
+        text-align: center;
+       }
+       
+       .grid-container main .PagProduct{
+        grid-area: productPage;
+        border: solid 1px black;
+        text-align: center;
+       }
+
+       .grid-container main .Experienciadetrabajo{
+        grid-area: workExperience;
+        border: solid 1px black;
+        text-align: center;
+       }
+
+       .grid-container main .OpenWork{
+        grid-area: openWord;
+        border: solid 1px black;
+        text-align: center;
+       }
+
+        .grid-container main .Educacion{
+        grid-area: education;
+        border: solid 1px black;
+        text-align: center;
+       }
+       /*Fin de elementos del main*/
+
+       /*Distribucion de elemntos de footer*/
+       .grid-container footer p{
+        grid-area: titulo;
+        background-color: white;
+        text-align: center;
+       }
+
+        .grid-container footer .test1{
+        grid-area: testimonio1;
+        background-color: white;
+        border-radius: 30px;
+        border: solid black;
+        text-align: center;
+       }
+
+        .grid-container footer .test2{
+        grid-area: testimonio2;
+        background-color: white;
+        border-radius: 30px;
+        border: solid black;
+        text-align: center;
+       }
+       
+        .grid-container footer .test3{
+        grid-area: testimonio3;
+        background-color: white;
+        border-radius: 30px;
+        border: solid black;
+        text-align: center;
+       }
+
+       .grid-container footer .derechos{
+        grid-area: derechos;
+        background-color: white;
+        border-radius: 30px;
+        border: solid black;
+        text-align: center;
+       }
+       /*Fin de dictrivucion de elementos footer*/
+
+       header nav span{
+        padding: 15px;
+       }
+
+       header section h1, p{
+        text-align: center;
+       }
+    </style>
+</head>
+<body>
+    <section class="grid-container">
+        <header>
+            <nav>
+                <span>Your Name</span>
+                <span>&nbsp;</span>
+                <span>&nbsp;</span>
+                <span>&nbsp;</span>
+                <span>&nbsp;</span>
+                <span>&nbsp;</span>
+                <span>&nbsp;</span>
+                <span>&nbsp;</span>
+                <span>&nbsp;</span>
+                <span>&nbsp;</span>
+                <span>&nbsp;</span>
+                <span>&nbsp;</span>
+                <span>Home</span>
+                <span>Projects</span>
+                <span>Articles</span>
+                <span>Contact</span>
+            </nav>
+            <section>
+                <h1>Frontend Developer</h1>
+                <p>Text example</p>
+            </section>
+        </header>
+        <main>
+            <section class="Projets">Projects HTML <br> Only Portafolio</section>
+            <section class="Calculadora">Calculator</section>
+            <section class="Quiz">Quiz app</section>
+            <section class="CuentaRegresiva">Count Down Timer</section>
+            <section class="PagProduct">Produc Upcoming Page</section>
+            <section class="Experienciadetrabajo">Work Experience</section>
+            <section class="OpenWork">Open sourse Work</section>
+            <section class="Educacion">Edication</section>
+        </main>
+        <footer>
+            <p>Reviews for my teachers</p>
+            <section class="test1">John doe was a brillant <br>
+               stundent; always stood out <br>
+                with his assignments.</section>
+            <section class="test2">John doe was a brillant <br>
+               stundent; always stood out <br>
+                with his assignments.</section>
+            <section class="test3">John doe was a brillant <br>
+               stundent; always stood out <br>
+                with his assignments.</section>
+            <p class="derechos">&copy; all rights reserverd 2025</p>
+        </footer>
+    </section>
+</body>
+</html>
